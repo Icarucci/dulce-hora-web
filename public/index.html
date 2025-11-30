@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dulce Hora - Barrio Naon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/favicon_64.png">
+</head>
+
+<body>
+  <div class="container">
+    <img src="img/Logo.jpg" alt="Dulce Hora Logo" class="logo">
+    <h1 class="titulo">
+        <span class="dulce">Dulce</span>
+        <span class="hora">Hora</span>
+    </h1>
+    <p class="sub">Cafetería & Pastelería</p>
+    <p class="sub">
+    <a href="https://maps.app.goo.gl/vEQugpkVhGfCaJ9n6" target="_blank" class="map-link">
+        Emilio Castro 7035, Buenos Aires, Argentina 1408
+    </a>
+    </p>
+
+    <a class="btn" href="https://www.instagram.com/dulcehorabarrionaon/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        Instagram
+    </a>
+
+    <a class="btn" href="https://www.google.com/search?sca_esv=edc10655191454d0&rlz=1C1ALOY_esAR974AR974&biw=432&bih=810&sxsrf=AE3TifPkYmEd-tyrKIYZWIJ2biyl8zOZBA:1764533713367&q=opiniones+de+dulce+hora+barrio+naon+ciudad+aut%C3%B3noma+de+buenos+aires&uds=AOm0WdERSKMbtbcKaXRvzhS6QuuJ4Xrup-15KX05rio9tjlOhOIdbcFMrMHMzFAlw2cUIppakH6KUb-3qHfl-EyHWqhaeQxkmTfRzeL7-lnijhWmMhufSeP65vSYEunUhvxx3ssVmtUfhBno_hRqW2AM8g8XD5HyndspIR0dSV6LvN6K9IkehU5FxoTNb2W3ct_YI3CvtYhpkPwYy5MaFLwpLe99b58QG6BnHP1p_2cz7ydXd4nj4G8rmnAu1YOWGOpB1coHaasOZOE-nEX1n-PSslwnSjHP3b66T7nN3e5Ts-xcGTgzobxnSrxkG5rMiizyykPfu2zNDw4Bdh_DJpatq5s7PILd_1e8yNDwe14JH2MY3OEatsxG9HqRUWvmBDcg-XbzvCmoAo4jnFQQWL9OOUbEObN_7_zint9TdpBS1H07pa3QF2y8poATkwEEbVCbmJjgI0YCWw5x8j6nHWuzGzWKIHsIZ2VVXrMhvjAW6AB-96H9F3rv2yDQWQHehboZ72UH_Uqq36tLpcX91MUS69O8Rb46ug&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E6UyF1zDoSRXaTLX1oFUiS703LI-iVNpWHaz3W_9HpkGabeAnpbJIWcGUY104w7s-8otZS0rffTwJXpx5a5vlu3hgEUJBeoR_AuGVPXaMDJR-jobfPlL1to7xhN1c_Z3RsC2qzu0DNWK9J6OSrxe8FUwZtqU&sa=X&ved=2ahUKEwjowrep2JqRAxXgJrkGHQ-TB0gQk8gLegQIGRAB&ictx=1&stq=1&cs=0&lei=0aUsaaiWFuDN5OUPj6aewAQ#ebo=4" target="_blank">
+        <i class="fa-brands fa-google"></i>
+        Compartinos tu experiencia
+    </a>
+
+    <button id="wifiBtn" class="btn" onclick="toggleWifi()">Mostrar WiFi del día</button>
+
+    <div id="wifiBox" class="wifi-box" style="display:none;">
+      <p id="wifiTexto"></p>
+    </div>
+    <p class="creditos">
+        Creado por <a href="https://icaruccidev.netlify.app/" target="_blank" class="credit-link">icaruccidev</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

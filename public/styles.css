@@ -1,0 +1,265 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #000000; /* color cálido pastel */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.container {
+    text-align: center;
+    background: #fffdfb;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 360px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    /* NUEVO: centra todos los elementos dentro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #5c3b2e; /* marrón suave tipo café */
+}
+
+.sub {
+    margin: 5px 0 25px 0;
+    font-size: 16px;
+    color: #8b6f62;
+}
+
+/* ====== BOTONES PRINCIPALES ====== */
+.btn {
+    display: block;
+    background: #c48b65; /* tono café claro */
+    color: white;
+    padding: 15px;
+    margin: 12px 0;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+
+    /* NUEVO: ancho y centrado */
+    width: 100%;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover {
+    background: #a97654;
+}
+
+.btn i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* ====== CUADRO DE LA WIFI ====== */
+.wifi-box {
+    margin-top: 25px;
+    padding: 15px;
+    background: #fff3e3;
+    border-radius: 10px;
+    border: 1px solid #e2c9b3;
+}
+
+#wifiTexto {
+    font-size: 17px;
+    color: #5c3b2e;
+    font-weight: bold;
+    white-space: pre-line; /* permite saltos de línea con \n */
+}
+
+/* ====== BOTÓN ADMIN ====== */
+.admin-btn {
+    margin-top: 20px;
+    background: #8b6f62;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.admin-btn:hover {
+    background: #6f574c;
+}
+
+/* ====== PANEL ADMIN ====== */
+.admin-panel {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5e6da;
+    border-radius: 10px;
+    border: 1px solid #e2c9b3;
+    text-align: left;
+}
+
+.admin-panel h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #5c3b2e;
+}
+
+/* ====== CAMPOS DE TEXTO EN PANEL ADMIN ====== */
+.admin-panel input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 1px solid #c9a991;
+    box-sizing: border-box;
+}
+
+/* ====== BOTÓN DEL PANEL ADMIN ====== */
+.admin-panel button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #c48b65;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-panel button:hover {
+    background: #a97654;
+}
+
+.mensaje {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.logo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;           /* mantiene proporcion interna */
+    border-radius: 50%;          /* asegura forma circular */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.20);  /* sombra elegante */
+    background: #fff;            /* importante: contenedor blanco para sello */
+    padding: 5px;                /* deja un borde blanco suave */
+}
+
+.titulo {
+    font-family: 'Lobster', cursive;
+    font-size: 42px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.titulo .dulce {
+    color: #000;           /* negro, igual que en el logo */
+}
+
+.titulo .hora {
+    color: #C3102D;        /* rojo del logo */
+    margin-left: 6px;      /* pequeño espacio igual al logo */
+}
+
+/*GOOGLEMAP*/
+.map-link {
+    color: #8b6f62;         /* mismo color que .sub */
+    text-decoration: none;  /* saca el subrayado */
+}
+
+.map-link:hover {
+    text-decoration: underline; /* queda más pro al pasar el mouse */
+}
+
+/*CREDITOS ICARUCCIDEV*/
+.creditos {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #b39e93;      /* un tono suave y cálido */
+    text-align: center;
+    opacity: 0.7;
+}
+
+.credit-link {
+    color: #a87c65;      /* tono café suave */
+    text-decoration: none;
+    font-weight: 600;    /* un poquito más marcada */
+}
+
+.credit-link:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* ====== RESPONSIVE PARA CELULARES ====== */
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+        align-items: center;     /* centra horizontal */
+        justify-content: flex-start; /* mantiene arriba pero sin exagerar */
+        min-height: 100dvh;      /* FIX real de altura en móviles */
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 12px;
+    }
+
+    .titulo {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .sub {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px;
+        max-width: 280px;
+    }
+
+    .wifi-box {
+        padding: 12px;
+        margin-top: 18px;
+    }
+
+    #wifiTexto {
+        font-size: 15px;
+    }
+}
+
+/* Un pequeño ajuste para tablets / pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        max-width: 420px;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+}
+
