@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // CONTRASEÑA DEL ADMINISTRADOR OCULTA
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+const ADMIN_PASSWORD = "Javito2025";
 
 const wifiFile = path.join(__dirname, "wifi.json");
 
